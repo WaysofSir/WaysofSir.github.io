@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — Sir Stone Local Transport Relay</title>
+<style>
+  body { font: 1.05rem/1.6 system-ui, sans-serif; max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; color: #222; }
+  a { color: #0645ad; }
+</style>
+<main>
+  <h1>Privacy and data handling</h1>
+  <p>Last updated: October 9, 2026</p>
+  <p>Sir Stone Local Transport Relay is a personal-use Mac utility. It uses Google Drive only to transport files encrypted before upload. It accesses the dedicated relay folder's file names, IDs, and ciphertext bytes; it may create that folder. It downloads a selected ciphertext file to the owner's Mac and deletes that Drive file only after local processing and encrypted backup verification succeed. A failed transfer may leave the ciphertext in Drive for retry.</p>
+  <p>Google's OAuth permission permits broad Drive access so the utility can process files uploaded by a separate sender. During setup, it lists the Drive root to find or create the dedicated folder. Its relay actions then use the configured folder and opaque transport files. OAuth credentials are stored in permission-restricted files on the owner's Mac and are not published with the software.</p>
+  <p>The utility does not upload plaintext source material to Drive. Decryption and intake occur on the owner's Mac. Its independent off-site recovery copy is encrypted before entering the owner's iCloud Drive. The utility does not sell Google user data or send downloaded Drive file contents to third-party analytics or advertising services.</p>
+  <p>Removing a transport file from Drive does not guarantee cryptographic erasure from Google's infrastructure. The owner can revoke the OAuth grant in Google Account settings and remove the dedicated relay folder and files in Drive.</p>
+  <p><a href="/">Back to app description</a></p>
+</main>
+</html>
